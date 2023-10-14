@@ -4,7 +4,7 @@
 /* Cor da Fonte */
 /* Backgrounds */
 body {
-  width: 100vw;
+  width: 100%;
   font-family: "Barlow", sans-serif;
 }
 
@@ -107,24 +107,26 @@ header input[type=checkbox]:checked, header input[type=checkbox]:focus {
 /* Cor da Fonte */
 /* Backgrounds */
 .servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
   margin-bottom: 2.5rem;
-}
-@media (min-width: 1023px) {
-  .servicos {
-    margin: 2.5rem 0 5rem 0;
-  }
 }
 .servicos h2 {
   font-size: 2.4rem;
   font-weight: 600;
-  text-align: center;
-  padding: 2.5rem 0;
+  margin: 2.5rem 0;
+}
+@media (min-width: 1024px) {
+  .servicos h2 {
+    margin-top: 5rem;
+  }
 }
 
 .div-servicos {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1.87rem;
 }
 @media (min-width: 1023px) {
@@ -135,18 +137,18 @@ header input[type=checkbox]:checked, header input[type=checkbox]:focus {
 }
 .div-servicos .card {
   width: 315px;
-  height: 492px;
+  margin: 0 auto;
   border: 1px solid #B29463;
   border-radius: 0;
-  display: flex;
-  flex-direction: column;
 }
 .div-servicos .card .card-body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.div-servicos .card .card-body h5, .div-servicos .card .card-body p, .div-servicos .card .card-body a {
+.div-servicos .card .card-body h5,
+.div-servicos .card .card-body p,
+.div-servicos .card .card-body a {
   margin: 0;
 }
 .div-servicos .card .card-body a {
@@ -161,33 +163,36 @@ header input[type=checkbox]:checked, header input[type=checkbox]:focus {
 /* Fonte */
 /* Cor da Fonte */
 /* Backgrounds */
-.produtos {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 2.5rem 0;
-}
 .produtos h2 {
+  text-align: center;
   font-weight: 600;
   font-size: 2.5rem;
+  margin: 2.5rem 0;
 }
 .produtos ul {
   padding: 0;
+  text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .produtos ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 1.87rem;
   }
 }
 @media (min-width: 1023px) {
   .produtos ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.87rem;
   }
 }
 .produtos ul li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 19rem;
+  margin: 0 auto;
 }
 .produtos ul li h3 {
   font-size: 1.75rem;

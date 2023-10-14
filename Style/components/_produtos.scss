@@ -1,32 +1,36 @@
 @import '../base/variaveis';
 
 .produtos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 2.5rem 0;
-
     h2 {
+        text-align: center;
         font-weight: 600;
         font-size: 2.5rem;
+        margin: 2.5rem 0;
     }
 
     ul {
         padding: 0;
+        text-align: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: 767px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            row-gap: 1.87rem;
         }
 
         @media (min-width: 1023px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 1.87rem;
         }
-
+        
         li {
             list-style: none;
-
+            display: flex;
+            flex-direction: column;
+            width: 19rem;
+            margin: 0 auto;
+            
             h3 {
                 font-size: 1.75rem;
                 font-weight: 600;

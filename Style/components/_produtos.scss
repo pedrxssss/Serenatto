@@ -1,0 +1,36 @@
+@import '../base/variaveis';
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2.5rem 0;
+
+    h2 {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    ul {
+        padding: 0;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 1023px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        li {
+            list-style: none;
+
+            h3 {
+                font-size: 1.75rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

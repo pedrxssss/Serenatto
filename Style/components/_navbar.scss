@@ -1,0 +1,16 @@
+@import '../base/variaveis';
+
+header {
+    //Checkbox Navbar
+    input[type=checkbox] {
+        border: 2px solid $marrom-claro;
+        box-shadow: none;
+
+        &:checked, &:focus {
+            background-color: $marrom-claro;
+            border-color: $marrom-claro;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}

@@ -55,3 +55,16 @@
         }
     }
 }
+
+.accordion-button {
+    background-color: $marrom-claro;
+    color: $escuro;
+    font-weight: 400;
+    font-family: $fonte-secundaria;
+    border: none;
+
+    &:focus {
+        background: $marrom-claro;
+        color: $escuro;
+    }    
+}

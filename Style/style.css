@@ -8,6 +8,17 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+/* Botão padrão do site */
+.botao-padrao {
+  background: #B29463;
+}
+.botao-padrao:hover {
+  background: #816D4F;
+}
+.botao-padrao:focus {
+  background: #B29463;
+}
+
 /* Variáveis das cores */
 /* Fonte */
 /* Cor da Fonte */
@@ -39,24 +50,14 @@ header input[type=checkbox]:checked, header input[type=checkbox]:focus {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
-.banner.banners-1 {
+
+.banners-titulo {
+  --bs-bg-opacity: .2;
+}
+
+.banners-1 {
   background-image: url(../../assets/banner-1.png);
-}
-.banner .banners-titulo {
-  background-color: rgba(255, 247, 233, 0.3);
-  padding: 3.25rem 0;
-}
-.banner .banners-titulo h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-}
-.banner .banners-titulo p {
-  font-weight: 400;
 }
 
 .banners-2 {
@@ -71,115 +72,26 @@ header input[type=checkbox]:checked, header input[type=checkbox]:focus {
 /* Fonte */
 /* Cor da Fonte */
 /* Backgrounds */
-.servicos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-  margin-bottom: 2.5rem;
-}
-.servicos h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin: 2.5rem 0;
-}
-@media (min-width: 1024px) {
-  .servicos h2 {
-    margin-top: 5rem;
-  }
+/* Variáveis das cores */
+/* Fonte */
+/* Cor da Fonte */
+/* Backgrounds */
+body {
+  width: 100%;
+  font-family: "Barlow", sans-serif;
 }
 
-.div-servicos {
-  display: flex;
-  flex-direction: column;
-  gap: 1.87rem;
-}
-@media (min-width: 1023px) {
-  .div-servicos {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.div-servicos .card {
-  width: 315px;
-  margin: 0 auto;
-  border: 1px solid #B29463;
-  border-radius: 0;
-}
-.div-servicos .card .card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.div-servicos .card .card-body h5,
-.div-servicos .card .card-body p,
-.div-servicos .card .card-body a {
-  margin: 0;
-}
-.div-servicos .card .card-body a {
-  background-color: #B29463;
-  color: #212529;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-  border: none;
-}
-
-.accordion-button {
-  background-color: #B29463;
-  color: #212529;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  border: none;
-}
-.accordion-button:focus {
+/* Botão padrão do site */
+.botao-padrao {
   background: #B29463;
-  color: #212529;
+}
+.botao-padrao:hover {
+  background: #816D4F;
+}
+.botao-padrao:focus {
+  background: #B29463;
 }
 
-/* Variáveis das cores */
-/* Fonte */
-/* Cor da Fonte */
-/* Backgrounds */
-.produtos h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 2.5rem;
-  margin: 2.5rem 0;
-}
-.produtos .grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
-  row-gap: 1rem;
-}
-@media (min-width: 767px) {
-  .produtos .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-}
-@media (min-width: 1024px) {
-  .produtos .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-}
-.produtos .card {
-  border: none;
-  text-align: center;
-  width: 369px;
-}
-.produtos .card div {
-  padding: 0;
-}
-
-/* Variáveis das cores */
-/* Fonte */
-/* Cor da Fonte */
-/* Backgrounds */
 form {
   margin: 5rem 1.87rem;
 }/*# sourceMappingURL=style.css.map */

@@ -10,31 +10,16 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
 
-    // Title and Text
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+//Opacidade
+.banners-titulo {
+    --bs-bg-opacity: .2;
+}
 
-    //Imagem
-    &.banners-1 {
-        background-image: url(../../assets/banner-1.png);
-    }
-
-    .banners-titulo {
-        background-color: $bg-banner;
-        padding: 3.25rem 0;
-
-        h2 {
-            font-size: 1.75rem;
-            font-weight: 700;
-        }
-
-        p {
-            font-weight: 400;
-        }
-    }
+//Imagem
+.banners-1 {
+    background-image: url(../../assets/banner-1.png);
 }
 
 //Banner 2

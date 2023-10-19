@@ -4,3 +4,16 @@ body {
     width: 100%;
     font-family: $fonte;
 }
+
+/* Botão padrão do site */
+.botao-padrao {
+    background: $marrom-claro;
+
+    &:hover {
+        background: $marrom-escuro;
+    }
+
+    &:focus {
+        background: $marrom-claro;
+    }
+}
